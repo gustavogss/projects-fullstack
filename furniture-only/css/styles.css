@@ -50,6 +50,10 @@ a {
   color: var(--txt-link);
 }
 
+a + a {
+  margin-left: 28px;
+}
+
 a:hover {    
     color: var(--txt-link-hover);
     transition: 0.2s;
