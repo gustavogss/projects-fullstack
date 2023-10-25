@@ -3,7 +3,7 @@
 
 # Projetos
  - [furniture-only](https://github.com/gustavogss/projects-fullstack/tree/main/furniture-only)
- - [treine.me](https://github.com/gustavogss/projects-fullstack/tree/main/treineme)  
+ - [treine.me](https://github.com/gustavogss/projects-fullstack/tree/main/treine.me)  
 
 # Deploy 
 - [furniture-only](https://furniture-only.vercel.app/) 
