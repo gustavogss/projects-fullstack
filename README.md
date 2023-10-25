@@ -6,4 +6,5 @@
  - [treine.me](https://github.com/gustavogss/projects-fullstack/tree/main/treine.me)  
 
 # Deploy 
-- [furniture-only](https://furniture-only.vercel.app/) 
+- [furniture-only](https://furniture-only.vercel.app/)
+- [treine.me](https://treine-me-one.vercel.app/)
