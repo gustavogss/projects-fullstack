@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <link rel="stylesheet" href="./css/styles.css">  
+</head>
+<body>
+    <header class="header">
+       <h3>Cadastre seu carro e venda mais rápido</h3> 
+    </header>
+    <main>
+        <section class="form-body">           
+            <p class="title-description">Descreva as caracterísitcas e marque os opcionais que ele possui</p>
+                <form action="">
+                <div class="box-input">
+                    <label for="title">Título do anuncio
+                        <span>*</span>
+                    </label>
+                    <input name="title" type="text" id="title" class="block" placeholder="Um título para anunciar o seu carro" minlength="5" maxlength="30" required>
+                </div>
+                <div class="box-input">
+                    <label for="price">Preço (R$)
+                        <span>*</span>
+                    </label>
+                    <input name="price" type="number" id="price" class="block" placeholder="Defina o preço" required>
+                </div>
+                <div class="box-input">
+                    <label for="description">Descrição
+                        <span>*</span>
+                    </label>
+                   <textarea name="description" id="description" class="block" placeholder="Detalhes do veículo"></textarea>
+                </div>
+                <div class="box-input">
+                    <label for="brand">Marca
+                        <span class="required-field">*</span>
+                    </label>
+                    <input name="brand" type="text" id="brand" class="block" placeholder="Qual é a marca do veículo" minlength="5" maxlength="30" required>
+                </div>
+                <div class="box-input">
+                    <label for="model">Modelo
+                        <span>*</span>
+                    </label>
+                    <input name="model" type="text" id="model" class="block" placeholder="Modelo do veículo" minlength="5" maxlength="30" required>
+                </div>
+                <div class="box-input">
+                    <label for="mileage">Kilometragem
+                        <span>*</span>
+                    </label>
+                    <input name="mileage" type="number" id="mileage" class="block" placeholder="Digite a kilometragem do veículo" required>
+                </div>
+                <div class="box-input">
+                    <label for="date_buy">Data de compra
+                        <span>*</span>
+                    </label>    
+                    <input name="date_buy" type="date" id="date_buy" class="block" required>
+                </div>
+                <div class="box-input">
+                    <p>Tipo de câmbio:  <span>*</span></p>
+                   <input type="radio" name="gear" id="manual">
+                   <label for="manual">Manual</label>
+                   <input type="radio" name="gear" id="auto">
+                   <label for="auto">Automático</label>
+                </div>
+                <div class="opcional-box">
+                    <p>Opcionais <span>*</span></p>
+                  <ul class="optional-list">
+                    <li>
+                        <input type="checkbox" id="airbag" name="optional[]" value="airbag">
+                        <label for="airbag">Airbag</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="alarm" name="optional[]" value="alarm">
+                        <label for="alarm">Alarme</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="ac" name="optional[]" value="ac">
+                        <label for="ac">Ar Condicionado</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cr" name="optional[]" value="cr">
+                        <label for="cr">Câmera de Ré</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="opcional-box">                 
+                  <ul class="optional-list">
+                    <li>
+                        <input type="checkbox" id="lain_assit" name="optional[]" value="lain_assit">
+                        <label for="lain_assit">Assistente de pista</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="keyless" name="optional[]" value="keyless">
+                        <label for="keyless">Partida Keyless</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="smartphone" name="optional[]" value="smartphone">
+                        <label for="smartphone">Integração com celular</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="letter_seat" name="optional[]" value="letter_seat">
+                        <label for="letter_seat">Banco de couro</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="box-input">
+                    <p>Fotos do carro: <span>*</span></p>
+                    <input type="file" multiple accept="image/png, image/jpg" name="images" id="images" required>
+                </div>
+                <input type="submit" value="Enviar" class="btn-submit">
+            </form>     
+        </section>          
+    </main>
+
+    <footer>
+        Landpage desenvolvida por <a href="http://www.gustavosouza.dev.br/"><em>Gustato Souza</em></a> com &nbsp;<span>♥</span>
+    </footer>    
+</body>
+</html>

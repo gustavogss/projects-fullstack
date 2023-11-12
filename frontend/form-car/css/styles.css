@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color: #673A67;  
+    --bg-form: #EEE;
+    --input-color: #CCC;
+    --bg-color: #FFF;
+    --text-color: #444;
+    --title-color: #212121;
+    --required-color: #F00;
+}
+
+body{
+font-size: 1.1rem;
+}
+
+.header{
+    height: 200px;
+    background-color: var(--primary-color);
+    text-align: center;      
+}
+
+h1, h2, h3, h4, h5, h6:{
+    color: var(--title-color);
+}
+
+.header h3{
+    color: var(--bg-color);
+    padding-top: 3rem;
+    font-weight:500;
+}
+
+p, label{
+    color: var(--text-color);
+}
+.required-field {
+    color: --var(--required-color);
+}
+input{   
+    border: none;
+    border-bottom: 1px solid var(--input-color);
+    padding: 0.55rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 400px;
+}
+
+textarea{
+ padding: 10px 5px;   
+}
+
+.form-body{
+    width: 60%;
+    background-color: var(--bg-form);
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+    padding: 20px;
+}
+
+.form-body .title-description{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.box-input{
+    padding-bottom: 30px;
+    
+}
+
+footer{
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 10px;
+}
+
+span{
+    color: var(--required-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--bg-form);
+}
+
+.btn-submit{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    background-color: var(--bg-form);
+    color: var(--primary-color);   
+    border: 1px solid var(--primary-color); 
+    border-radius: 10px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    transition: 0.2s;  
+}
+
+.btn-submit:hover{   
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    cursor: pointer;   
+
+}
+
+li{
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.block{
+    display: block;
+}
+
+.opcional-box{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.box-input p{
+    margin-top: 15px;
+}
